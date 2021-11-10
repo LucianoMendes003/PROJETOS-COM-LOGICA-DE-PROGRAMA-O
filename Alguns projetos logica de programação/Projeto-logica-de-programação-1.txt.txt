@@ -1,0 +1,30 @@
+programa {
+    
+    inclua biblioteca Matematica --> mat
+    
+	funcao inicio() {
+		real valorA, valorB, valorC, perimetro, area, raiz
+		
+		escreva("Informe a primeira medida:")
+		    leia(valorA)
+		    
+		escreva("Informe a segunda medida:")
+		    leia(valorB)
+		    
+		escreva("Informe a terceira medida:")
+		    leia(valorC)
+		    
+		se(valorA+valorB>valorC e valorA+valorC>valorB e valorB+valorC>valorA){
+		    escreva("É um triangulo", "\n")
+		    
+		        perimetro=valorA+valorB+valorC/2
+                    area=mat.raiz(perimetro*(perimetro-valorA)*(perimetro-valorB)*(perimetro-valorC), 2.0)
+            
+            escreva("A area do triangulo é:", area)
+}
+        senao{
+            escreva("Nao é um triangulo")
+}
+
+}
+}

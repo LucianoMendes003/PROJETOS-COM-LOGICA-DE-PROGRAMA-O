@@ -1,0 +1,53 @@
+programa {
+	funcao inicio() {
+		inteiro vetor[1000], contador1, contador2, auxiliar, n
+		
+		escreva("Digite o tamanho do vetor:")   
+		leia(n)
+		limpa()
+		se(n>1000)
+		    {escreva("N maior que o permitido, reinicie o algoritimo.","\n")}
+		    
+	
+	
+	    senao{
+	       para(contador1=0;contador1<n;contador1++)
+	       {
+	           escreva("Informe o ",contador1, " elemento do vetor:")
+	           leia(vetor[contador1])
+	           limpa()
+	       }
+	    
+	    
+	    
+	   escreva("Vetor digitado: \n")
+   
+       para(contador1=0;contador1<n;contador1++)
+       {
+           escreva(vetor[contador1],"  ")
+       }
+       
+       para(contador1=0;contador1<n;contador1++)
+       {
+           para(contador2=contador1+1;contador2<n;contador2++)
+                
+                se(vetor[contador1]<vetor[contador2])
+                {
+                    auxiliar=vetor[contador2]
+	                vetor[contador2]=vetor[contador1]
+	                vetor[contador1]=auxiliar
+                }
+       }
+	    
+        escreva("Vetor decrescente:\n")
+        para(contador1=0;contador1<n;contador1++)
+        {
+            escreva(vetor[contador1], "  ")
+        }
+   
+   
+   
+   
+    }
+}
+}

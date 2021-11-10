@@ -1,0 +1,14 @@
+programa {
+	funcao inicio() {
+		
+		real dolarUS, realRS, resultado
+		
+		escreva("Insira cotação atual do dolar:")
+		leia(dolarUS)
+		escreva("Qual a quantia em reais a na conta?")
+		leia(realRS)
+		resultado=dolarUS*realRS
+	    escreva("Você possue US$", resultado, " ", "em dolar")
+	}
+		
+}
